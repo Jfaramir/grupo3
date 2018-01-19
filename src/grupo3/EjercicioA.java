@@ -10,10 +10,14 @@ package grupo3;
  * @author xp
  */
 public class EjercicioA {
-
-    /**
-     * @param args the command line arguments
-     */
+    
+    public boolean cigarParty(int cigars, boolean isWeekend) {
+    if(isWeekend)
+        return 40 <= cigars;
+          
+    return 40 <= cigars && cigars <= 60;
+}
+   
     public static void main(String[] args) {
         // TODO code application logic here
     }
